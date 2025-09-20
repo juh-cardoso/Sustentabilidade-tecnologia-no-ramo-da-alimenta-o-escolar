@@ -25,7 +25,7 @@ body {
 /* Nav */
 header {
   width: 100%;
-  padding: 20px 40px;
+  padding: 60px 120px;
   display: flex;
   justify-content: flex-end;
 }
