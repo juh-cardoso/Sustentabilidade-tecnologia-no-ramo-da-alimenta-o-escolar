@@ -1,0 +1,27 @@
+:root{
+--bg-url: url('img/43.png');
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+
+body{
+min-height:100vh;
+font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+
+background-image: var(--bg-url);
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover; 
+background-attachment: fixed;
+}
+.fullscreen-bg{
+min-height:100vh;
+width:100%;
+}
+.fullscreen-bg::before{
+content:'';
+position:fixed; inset:0; z-index:0;
+background: rgba(0,0,0,0.03);
+}
