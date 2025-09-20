@@ -1,59 +1,180 @@
-:root{
-/* ajuste o caminho se necessário (caso a imagem esteja em outra pasta) */
---bg-url: url('img/43.png');
+:root {
+  /* variáveis globais */
+  --bg-url: url('img/43.png'); /* caminho da sua imagem */
+  --mask-top-left-x: 5%;
+  --mask-top-left-y: 4%;
+  --mask-top-left-w: 40%;
+  --mask-top-left-h: 36%;
+  --mask-bottom-x: 8%;
+  --mask-bottom-y: 78%;
+  --mask-bottom-w: 84%;
+  --mask-bottom-h: 14%;
+  --page-bg: #fbfdf7;
 }
 
-
-/* Reset básico */
-*{box-sizing:border-box}
-html,body{height:100%;margin:0}
-
-
-/* Corpo usa a imagem como pano de fundo em full-screen */
-body{
-min-height:100vh;
-font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
--webkit-font-smoothing:antialiased;
--moz-osx-font-smoothing:grayscale;
-
-
-/* background */
-background-image: var(--bg-url);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover; /* cobre toda a viewport mantendo proporção */
-
-
-/* fixa o fundo para evitar saltos em scroll */
-background-attachment: fixed;
+/* Reset / base */
+* {
+  box-sizing: border-box;
 }
 
-
-/* elemento placeholder caso precise de conteúdo sobre o fundo */
-.fullscreen-bg{
-min-height:100vh;
-width:100%;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-gap:12px;
-text-align:center;
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #013a1f;
 }
 
-
-.title{
-color:#ffffff;
-font-size:2rem;
-text-shadow:0 2px 6px rgba(0,0,0,0.6);
-margin:0;
+/* Hero / Fundo */
+.hero {
+  min-height: 100vh;
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 32px 6%;
 }
 
+/* Máscaras para ocultar retângulos/verdes/letras indesejadas da imagem */
+.mask {
+  position: absolute;
+  background: var(--page-bg);
+  pointer-events: none;
+}
 
-/* Recomendações visuais opcionais (comente se não quiser): */
-/*
-.fullscreen-bg::before{
-content:'';
-position:fixed; inset:0; z-index:0;
-background: rgba(0,0,0,0.03);
+.mask.top-left {
+  left: var(--mask-top-left-x);
+  top: var(--mask-top-left-y);
+  width: var(--mask-top-left-w);
+  height: var(--mask-top-left-h);
+  border-radius: 14px;
+}
+
+.mask.bottom {
+  left: var(--mask-bottom-x);
+  top: var(--mask-bottom-y);
+  width: var(--mask-bottom-w);
+  height: var(--mask-bottom-h);
+  border-radius: 20px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  padding: 8px 12px;
+  z-index: 3;
+}
+
+nav a {
+  text-decoration: none;
+  color: #083c24;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: all .22s ease;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  bottom: -6px;
+  height: 3px;
+  width: 60%;
+  background: #a7d6a7;
+  border-radius: 6px;
+  transition: transform .22s ease;
+}
+
+nav a:hover {
+  color: #0b5f34;
+  transform: translateY(-3px);
+}
+
+nav a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Conteúdo central */
+.content {
+  margin-top: 28vh;
+  text-align: center;
+  z-index: 2;
+  padding: 24px 12px;
+}
+
+.title {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  color: #0b3f26;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 0 0 24px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botões */
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  z-index: 4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.06);
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+  background: rgba(8,76,38,0.08);
+  color: #04361f;
+  border: 2px solid rgba(4,54,31,0.06);
+}
+
+.btn:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 30px rgba(3,40,20,0.12);
+  background: linear-gradient(180deg, rgba(10,90,44,0.09), rgba(10,90,44,0.06));
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 800px) {
+  .title { font-size: 32px; }
+  nav { gap: 18px; }
+  :root {
+    --mask-top-left-w: 46%;
+    --mask-top-left-h: 28%;
+    --mask-bottom-y: 70%;
+  }
+}
+
+/* Info note (rodapé explicativo) */
+.info-note {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: rgba(255,255,255,0.95);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  z-index: 6;
 }
