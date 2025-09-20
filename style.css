@@ -1,180 +1,102 @@
 :root {
-  /* variáveis globais */
-  --bg-url: url('img/43.png'); /* caminho da sua imagem */
-  --mask-top-left-x: 5%;
-  --mask-top-left-y: 4%;
-  --mask-top-left-w: 40%;
-  --mask-top-left-h: 36%;
-  --mask-bottom-x: 8%;
-  --mask-bottom-y: 78%;
-  --mask-bottom-w: 84%;
-  --mask-bottom-h: 14%;
-  --page-bg: #fbfdf7;
+  --bg-url: url("img/43\ \(1\).png"); /* ajuste para o nome real do arquivo */
+  --green: #04361f;
+  --green-light: rgba(8,76,38,0.08);
 }
 
-/* Reset / base */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
   height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-  color: #013a1f;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
 }
 
-/* Hero / Fundo */
-.hero {
-  min-height: 100vh;
+body {
   background-image: var(--bg-url);
   background-size: cover;
-  background-position: center 35%;
-  background-repeat: no-repeat;
-  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--green);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  padding: 32px 6%;
+  align-items: center;
 }
 
-/* Máscaras para ocultar retângulos/verdes/letras indesejadas da imagem */
-.mask {
-  position: absolute;
-  background: var(--page-bg);
-  pointer-events: none;
-}
-
-.mask.top-left {
-  left: var(--mask-top-left-x);
-  top: var(--mask-top-left-y);
-  width: var(--mask-top-left-w);
-  height: var(--mask-top-left-h);
-  border-radius: 14px;
-}
-
-.mask.bottom {
-  left: var(--mask-bottom-x);
-  top: var(--mask-bottom-y);
-  width: var(--mask-bottom-w);
-  height: var(--mask-bottom-h);
-  border-radius: 20px;
-}
-
-/* Navegação */
-nav {
+/* Nav */
+header {
+  width: 100%;
+  padding: 20px 40px;
   display: flex;
   justify-content: flex-end;
-  gap: 28px;
-  padding: 8px 12px;
-  z-index: 3;
 }
 
 nav a {
+  margin-left: 20px;
   text-decoration: none;
-  color: #083c24;
+  color: var(--green);
   font-weight: 600;
-  letter-spacing: 0.2px;
-  transition: all .22s ease;
-  position: relative;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  bottom: -6px;
-  height: 3px;
-  width: 60%;
-  background: #a7d6a7;
-  border-radius: 6px;
-  transition: transform .22s ease;
+  transition: color .3s;
 }
 
 nav a:hover {
-  color: #0b5f34;
-  transform: translateY(-3px);
+  color: #0a5a2c;
 }
 
-nav a:hover::after {
-  transform: translateX(-50%) scaleX(1);
-}
-
-/* Conteúdo central */
-.content {
-  margin-top: 28vh;
+/* Títulos */
+main {
+  max-width: 900px;
   text-align: center;
-  z-index: 2;
-  padding: 24px 12px;
+  padding: 20px;
 }
 
-.title {
-  font-size: 44px;
+.main-title {
+  font-size: 2.6rem;
   font-weight: 800;
-  margin: 0 0 12px 0;
-  color: #0b3f26;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  line-height: 1.2;
 }
 
 .subtitle {
-  font-size: 20px;
-  margin: 0 0 24px 0;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #2c4c35;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2e4635;
 }
 
 /* Botões */
 .buttons {
+  margin-top: 30px;
   display: flex;
-  gap: 16px;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 12px;
-  z-index: 4;
+  justify-content: center;
+  gap: 15px;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 20px;
-  border-radius: 14px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 700;
-  box-shadow: 0 6px 0 rgba(0,0,0,0.06);
-  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
-  background: rgba(8,76,38,0.08);
-  color: #04361f;
+  background: var(--green-light);
+  color: var(--green);
   border: 2px solid rgba(4,54,31,0.06);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
 }
 
 .btn:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 16px 30px rgba(3,40,20,0.12);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(3,40,20,0.12);
   background: linear-gradient(180deg, rgba(10,90,44,0.09), rgba(10,90,44,0.06));
-}
-
-/* Responsivo para telas menores */
-@media (max-width: 800px) {
-  .title { font-size: 32px; }
-  nav { gap: 18px; }
-  :root {
-    --mask-top-left-w: 46%;
-    --mask-top-left-h: 28%;
-    --mask-bottom-y: 70%;
-  }
-}
-
-/* Info note (rodapé explicativo) */
-.info-note {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  background: rgba(255,255,255,0.95);
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 13px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  z-index: 6;
 }
