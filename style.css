@@ -1,25 +1,57 @@
 :root{
+/* ajuste o caminho se necessário (caso a imagem esteja em outra pasta) */
 --bg-url: url('img/43.png');
 }
+
+
+/* Reset básico */
 *{box-sizing:border-box}
 html,body{height:100%;margin:0}
 
+
+/* Corpo usa a imagem como pano de fundo em full-screen */
 body{
 min-height:100vh;
 font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 -webkit-font-smoothing:antialiased;
 -moz-osx-font-smoothing:grayscale;
 
+
+/* background */
 background-image: var(--bg-url);
 background-repeat: no-repeat;
 background-position: center center;
-background-size: cover; 
+background-size: cover; /* cobre toda a viewport mantendo proporção */
+
+
+/* fixa o fundo para evitar saltos em scroll */
 background-attachment: fixed;
 }
+
+
+/* elemento placeholder caso precise de conteúdo sobre o fundo */
 .fullscreen-bg{
 min-height:100vh;
 width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:12px;
+text-align:center;
 }
+
+
+.title{
+color:#ffffff;
+font-size:2rem;
+text-shadow:0 2px 6px rgba(0,0,0,0.6);
+margin:0;
+}
+
+
+/* Recomendações visuais opcionais (comente se não quiser): */
+/*
 .fullscreen-bg::before{
 content:'';
 position:fixed; inset:0; z-index:0;
