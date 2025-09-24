@@ -4,18 +4,6 @@
   --green-light: rgba(8,76,38,0.08);
 }
 
-
-body {
-  background-image: var(--bg-url);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: var(--green);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* reset / base */
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;background:var(--cream);color:var(--green-dark)}
