@@ -1,43 +1,59 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Sustentabilidade e Tecnologia</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navegação topo -->
-  <header>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <nav class="top-nav" aria-label="principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Conteúdo central -->
   <main>
-    <h1 class="main-title">SUSTENTABILIDADE <br> E TECNOLOGIA</h1>
-    <h2 class="subtitle">no ramo de alimentação do Paraná</h2>
+    <!-- HERO (título grande à esquerda + área decorativa à direita) -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">SUSTENTABILIDADE<br/>E TECNOLOGIA</h1>
+          <p class="hero-sub">no ramo de alimentação do Paraná</p>
+        </div>
 
-    <section class="content">
-      <h2 class="section-title">Alimentação Escolar do Paraná</h2>
-      <p>
-        Promovemos um sistema de alimentação escolar sustentável no Paraná, 
-        integrando inovações tecnológicas para reduzir desperdícios e promover 
-        a utilização eficiente dos recursos naturais.
-      </p>
+        <!-- área direita: sem ilustração, apenas um bloco decorativo (mantém o balanço visual) -->
+        <div class="hero-right" aria-hidden="true">
+          <!-- bloco decorativo para ocupar o mesmo espaço visual da imagem original -->
+          <div class="decor-oval"></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Botões -->
-    <div class="buttons">
-      <a href="#gestao" class="btn">Gestão alimentar</a>
-      <a href="#projetos-lei" class="btn">Projetos de Lei</a>
-      <a href="#projetos-melhoria" class="btn">Projetos de melhoria</a>
-      <a href="#planos" class="btn">Planos orçamentais</a>
-      <a href="#opiniao" class="btn">Opinião pública</a>
-    </div>
+    <!-- SEÇÃO CENTRAL (título grande centrado + parágrafo) -->
+    <section id="inicio" class="center-section">
+      <div class="container">
+        <h2 class="center-title">Alimentação Escolar do Paraná</h2>
+        <p class="center-desc">
+          Promovemos um sistema de alimentação escolar sustentável no Paraná, integrando
+          inovações tecnológicas para reduzir desperdícios e promover a utilização eficiente
+          dos recursos naturais.
+        </p>
+
+        <!-- BOTOES PRINCIPAIS -->
+        <nav class="buttons" aria-label="links principais">
+          <a class="btn" href="#gestao">Gestão alimentar</a>
+          <a class="btn" href="#leis">Projetos de Lei</a>
+          <a class="btn" href="#melhorias">Projetos de melhoria</a>
+          <a class="btn" href="#orcamento">Planos orçamentais</a>
+          <a class="btn" href="#opiniao">Opinião pública</a>
+        </nav>
+      </div>
+    </section>
   </main>
 </body>
 </html>
