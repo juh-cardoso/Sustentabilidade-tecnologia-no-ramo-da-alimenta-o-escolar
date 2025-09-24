@@ -4,12 +4,6 @@
   --green-light: rgba(8,76,38,0.08);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body {
-  height: 100%;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-}
 
 body {
   background-image: var(--bg-url);
