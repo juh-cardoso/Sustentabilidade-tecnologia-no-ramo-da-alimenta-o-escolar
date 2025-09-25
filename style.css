@@ -92,11 +92,11 @@ a{color:inherit}
   padding:12px 22px;
   border-radius:20px;
   background: var(--btn-dark);
-  color: #9e2c2c;
+  color: #ffffff;
   text-decoration:none;
   font-weight:700;
   box-shadow: 0 8px 18px var(--btn-shadow);
-  border: 3px solid rgba(28, 148, 80, 0.12);
+  border: 3px solid rgba(0, 0, 0, 0.12);
   transition: transform .18s ease, box-shadow .22s ease, filter .15s ease;
 }
 .btn:hover{
