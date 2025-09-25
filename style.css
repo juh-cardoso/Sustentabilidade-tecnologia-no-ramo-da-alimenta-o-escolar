@@ -1,5 +1,5 @@
 :root {
-bg-url: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
+border: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
 }
 /* HEADER / NAV TOPO - alinhado à direita */
 .site-header{padding:28px 0}
