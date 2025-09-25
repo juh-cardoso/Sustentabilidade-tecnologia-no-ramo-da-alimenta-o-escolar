@@ -16,7 +16,6 @@ a{color:inherit}
   text-decoration:none;
   font-weight:600;
   letter-spacing:0.2px;
-  color:var(--green-dark);
   transition: color .18s ease, transform .18s ease;
   position:relative;
 }
@@ -32,9 +31,6 @@ a{color:inherit}
   border-radius:6px;
   transition: transform .18s ease;
 }
-.top-nav a:hover{ color: var(--green-medium); transform: translateY(-3px); }
-.top-nav a:hover::after{ transform:translateX(-50%) scaleX(1); }
-
 /* lado esquerdo - TITULO grande estilo da imagem */
 .hero-title{
   font-weight:900;
@@ -50,7 +46,7 @@ a{color:inherit}
 /* SEÇÃO CENTRAL */
 .center-section{ padding:30px var(--gutter) 50px; text-align:center;}
 .center-title{
-  margin: 135px 0 8px;
+  margin: 170px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
   font-weight:800;
   color:var(--green-dark);
