@@ -38,10 +38,6 @@ a{color:inherit}
 .top-nav a:hover{ color: var(--green-medium); transform: translateY(-3px); }
 .top-nav a:hover::after{ transform:translateX(-50%) scaleX(1); }
 
-/* HERO */
-.hero{ padding-top:8px; padding-bottom:20px;}
-.hero-inner{ display:grid; grid-template-columns: 1fr 520px; gap:32px; align-items:center; padding:10px var(--gutter);}
-
 /* lado esquerdo - TITULO grande estilo da imagem */
 .hero-title{
   font-weight:900;
