@@ -64,7 +64,7 @@ a{color:inherit}
 /* SEÇÃO CENTRAL */
 .center-section{ padding:30px var(--gutter) 50px; text-align:center;}
 .center-title{
-  margin: 120px 0 8px;
+  margin: 130px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
   font-weight:800;
   color:var(--green-dark);
@@ -92,7 +92,7 @@ a{color:inherit}
   padding:12px 22px;
   border-radius:20px;
   background: var(--btn-dark);
-  color: #ffffff;
+  color: #030000;
   text-decoration:none;
   font-weight:700;
   box-shadow: 0 8px 18px var(--btn-shadow);
