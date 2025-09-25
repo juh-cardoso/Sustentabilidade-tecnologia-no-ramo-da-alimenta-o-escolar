@@ -70,7 +70,7 @@ body {
 }
 .center-desc{
   margin:0 auto;
-  max-width:1000px;
+  max-width:10000000px;
   color:#3763139d;
   font-size:20px;
   line-height:1.8;
@@ -100,7 +100,7 @@ body {
 }
 .btn:hover{
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 18px 4000px rgb(3, 40, 20);
+  box-shadow: 0 18px 40px rgb(3, 40, 20);
   filter:brightness(1.05);
 }
 
