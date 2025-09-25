@@ -11,11 +11,11 @@ a{color:inherit}
 
 /* HEADER / NAV TOPO - alinhado à direita */
 .site-header{padding:28px 0}
-.top-nav{display:flex;justify-content:flex-end;gap:36px;align-items:center}
+.top-nav{display:flex;justify-content:flex-end;gap:50px;align-items:center}
 .top-nav a{
   text-decoration:none;
   font-weight:600;
-  letter-spacing:0.9px;
+  letter-spacing:0.2px;
   color:var(--green-dark);
   transition: color .18s ease, transform .18s ease;
   position:relative;
