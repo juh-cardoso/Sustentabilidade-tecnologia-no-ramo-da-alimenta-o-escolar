@@ -28,6 +28,14 @@ body {
   transition: color .18s ease, transform .18s ease;
   position:relative;
 }
+
+.top-nav a:hover{ color: var(--green-medium); transform: translateY(-3px); }
+.top-nav a:hover::after{ transform:translateX(-50%) scaleX(1); }
+
+/* HERO */
+.hero{ padding-top:8px; padding-bottom:20px;}
+.hero-inner{ display:grid; grid-template-columns: 1fr 520px; gap:32px; align-items:center; padding:10px var(--gutter);}
+
 .top-nav a::after{
   content:"";
   position:absolute;
