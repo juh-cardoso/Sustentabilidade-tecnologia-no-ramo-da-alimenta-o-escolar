@@ -30,7 +30,7 @@
   font-weight:900;
   margin:0;
   line-height:0.96;
-  color:;
+  color:forestgreen;
   /* escala responsiva do título */
   font-size: clamp(16px, 5.0vw, 900px);
   letter-spacing: -1px;
