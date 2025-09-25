@@ -49,8 +49,8 @@ a{color:inherit}
   line-height:0.96;
   color:var(--green-dark);
   /* escala responsiva do título */
-  font-size: clamp(30px, 5.0vw, 76px);
-  letter-spacing: -1px;
+  font-size: clamp(16px, 5.0vw, 76px);
+  letter-spacing: 10px;
   text-transform:uppercase;
 }
 
