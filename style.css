@@ -1,8 +1,7 @@
 :root {
---bg-url: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
+--bg-url: url('img/43.png'); /* ajuste para o nome real do arquivo */
   --green: #04361f;
   --green-light: rgba(8,76,38,0.08);
-}
 }
 /* HEADER / NAV TOPO - alinhado à direita */
 .site-header{padding:28px 0}
