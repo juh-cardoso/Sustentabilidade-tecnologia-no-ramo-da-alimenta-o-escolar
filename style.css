@@ -10,11 +10,11 @@ html, body {
 
 /* Fundo full screen */
 body {
-  background-image: url("img/43\ \(1\).png"); /* coloque sua imagem aqui */
-  background-size: cover;      /* cobre toda a tela */
-  background-position: center; /* centralizada */
+  background-image: url("img/43\ \(1\).png"); 
+  background-size: cover;     
+  background-position: center; 
   background-repeat: no-repeat;
-  background-attachment: fixed; /* fundo fixo mesmo com scroll */
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
 /* HEADER / NAV TOPO - alinhado à direita */
@@ -22,7 +22,7 @@ body {
 .top-nav{display:flex;justify-content:flex-end;gap:70px;align-items:center}
 .top-nav a{
   text-decoration:none;
-  font-weight:800;
+  font-weight:700;
   letter-spacing:0.2px;
   color: #04361f;
   transition: color .18s ease, transform .18s ease;
