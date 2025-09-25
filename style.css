@@ -18,7 +18,7 @@ body {
   font-family: Arial, sans-serif;
 }
 /* HEADER / NAV TOPO - alinhado à direita */
-.site-header{padding:-1px 0}
+.site-header{padding:-8px 0}
 .top-nav{display:flex;justify-content:flex-end;gap:70px;align-items:center}
 .top-nav a{
   text-decoration:none;
