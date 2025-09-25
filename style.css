@@ -65,7 +65,7 @@ body {
 .center-title{
   margin: 150px 0 8px;
   font-size: clamp(8px, 3.6vw, 480px);
-  font-weight:800;
+  font-weight:900;
   color:#04361f:
 }
 .center-desc{
