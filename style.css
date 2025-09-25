@@ -76,7 +76,7 @@ border: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
 }
 .btn:hover{
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 180px 40px rgb(3, 40, 20);
+  box-shadow: 0 18px 40px rgb(3, 40, 20);
   filter:brightness(1.05);
 }
 
