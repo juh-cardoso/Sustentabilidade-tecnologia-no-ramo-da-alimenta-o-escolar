@@ -9,9 +9,6 @@
 html,body{height:100%;margin:0;font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;background:var(--cream);color:var(--green-dark)}
 a{color:inherit}
 
-/* container central (max-width) */
-.container{max-width:var(--max-width);margin:0 auto;padding:0 1rem}
-
 /* HEADER / NAV TOPO - alinhado à direita */
 .site-header{padding:28px 0}
 .top-nav{display:flex;justify-content:flex-end;gap:36px;align-items:center}
@@ -53,7 +50,7 @@ a{color:inherit}
 /* SEÇÃO CENTRAL */
 .center-section{ padding:30px var(--gutter) 50px; text-align:center;}
 .center-title{
-  margin: 125px 0 8px;
+  margin: 135px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
   font-weight:800;
   color:var(--green-dark);
