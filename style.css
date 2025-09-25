@@ -14,8 +14,8 @@ a{color:inherit}
 .top-nav{display:flex;justify-content:flex-end;gap:36px;align-items:center}
 .top-nav a{
   text-decoration:none;
-  font-weight:60;
-  letter-spacing:0.2px;
+  font-weight:600;
+  letter-spacing:0.9px;
   color:var(--green-dark);
   transition: color .18s ease, transform .18s ease;
   position:relative;
