@@ -37,7 +37,7 @@ border: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
 }
 
 /* SEÇÃO CENTRAL */
-.center-section{ padding:30px var(--gutter) 50px; text-align:center;}
+.center-section{ padding:30px 50px; text-align:center;}
 .center-title{
   margin: 200px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
@@ -76,7 +76,7 @@ border: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
 }
 .btn:hover{
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 18px 40px rgb(3, 40, 20);
+  box-shadow: 0 180px 40px rgb(3, 40, 20);
   filter:brightness(1.05);
 }
 
