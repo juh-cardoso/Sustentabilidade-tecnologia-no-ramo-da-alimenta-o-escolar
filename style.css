@@ -46,7 +46,7 @@ a{color:inherit}
 /* SEÇÃO CENTRAL */
 .center-section{ padding:30px var(--gutter) 50px; text-align:center;}
 .center-title{
-  margin: 170px 0 8px;
+  margin: 200px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
   font-weight:800;
   color:var(--green-dark);
