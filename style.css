@@ -70,12 +70,12 @@ a{color:inherit}
   color:var(--green-dark);
 }
 .center-desc{
-  margin:60 auto;
+  margin:0 auto;
   max-width:1000px;
   color:#2e4635;
   font-size:20px;
   line-height:1.8;
-  padding:0 20px;
+  padding:60 20px;
 }
 
 /* BOTÕES (linha inferior) */
