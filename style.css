@@ -1,5 +1,21 @@
-:root {
-border: url('img/43.png'); /* ajuste para o nome real do arquivo */
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Fundo full screen */
+body {
+  background-image: url("img/43\ \(1\).png"); /* coloque sua imagem aqui */
+  background-size: cover;      /* cobre toda a tela */
+  background-position: center; /* centralizada */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* fundo fixo mesmo com scroll */
+  font-family: Arial, sans-serif;
 }
 /* HEADER / NAV TOPO - alinhado à direita */
 .site-header{padding:28px 0}
