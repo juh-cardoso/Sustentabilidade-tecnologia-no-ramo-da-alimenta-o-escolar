@@ -61,7 +61,7 @@ body {
 }
 
 /* SEÇÃO CENTRAL */
-.center-section{ padding:30px 50px; text-align:center;}
+.center-section{ padding:30px 100px; text-align:center;}
 .center-title{
   margin: 150px 0 8px;
   font-size: clamp(8px, 3.6vw, 480px);
