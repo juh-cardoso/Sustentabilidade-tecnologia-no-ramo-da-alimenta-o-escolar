@@ -10,6 +10,7 @@
   text-decoration:none;
   font-weight:800;
   letter-spacing:0.2px;
+  color: #04361f;
   transition: color .18s ease, transform .18s ease;
   position:relative;
 }
@@ -43,7 +44,7 @@
   margin: 200px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
   font-weight:800;
-  color:var(--green-dark);
+  color:#04361f:
 }
 .center-desc{
   margin:0 auto;
