@@ -72,7 +72,7 @@ a{color:inherit}
 .center-desc{
   margin:0 auto;
   max-width:1000px;
-  color:#ff5e00;
+  color:#3763139d;
   font-size:20px;
   line-height:1.8;
   padding:60 20px;
@@ -96,7 +96,7 @@ a{color:inherit}
   text-decoration:none;
   font-weight:700;
   box-shadow: 0 8px 18px var(--btn-shadow);
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid rgba(17, 68, 12, 0.781);
   transition: transform .18s ease, box-shadow .22s ease, filter .15s ease;
 }
 .btn:hover{
