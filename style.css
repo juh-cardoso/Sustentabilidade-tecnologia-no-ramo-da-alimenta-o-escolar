@@ -26,10 +26,10 @@ border: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
 }
 /* lado esquerdo - TITULO grande estilo da imagem */
 .hero-title{
-  font-weight:900;
+  font-weight:1000;
   margin:0;
   line-height:0.96;
-  color:forestgreen;
+  color:rgb(13, 71, 13);
   /* escala responsiva do título */
   font-size: clamp(16px, 5.0vw, 900px);
   letter-spacing: -1px;
