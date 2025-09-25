@@ -39,7 +39,7 @@ border: url('img/43\ \(1\).png'); /* ajuste para o nome real do arquivo */
 /* SEÇÃO CENTRAL */
 .center-section{ padding:30px 50px; text-align:center;}
 .center-title{
-  margin: 200px 0 8px;
+  margin: 250px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
   font-weight:800;
   color:#04361f:
