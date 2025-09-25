@@ -62,7 +62,7 @@ a{color:inherit}
 }
 
 /* SEÇÃO CENTRAL */
-.center-section{ padding:132px var(--gutter) 156px; text-align:center;}
+.center-section{ padding:32px var(--gutter) 56px; text-align:center;}
 .center-title{
   margin: 18px 0 8px;
   font-size: clamp(28px, 3.6vw, 48px);
@@ -71,7 +71,7 @@ a{color:inherit}
 }
 .center-desc{
   margin:0 auto;
-  max-width:960px;
+  max-width:96px;
   color:#2e4635;
   font-size:18px;
   line-height:1.6;
