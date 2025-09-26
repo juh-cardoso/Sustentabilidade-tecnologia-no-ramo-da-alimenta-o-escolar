@@ -67,8 +67,8 @@ body {
   max-width:10000000px;
   color:#3763139d;
   font-size:-20px;
-  line-height:3;
-  padding:20 10px;
+  line-height:-1;
+  padding:60 40px;
 }
 
 /* BOTÕES (linha inferior) */
