@@ -11,7 +11,7 @@ body {
   background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
-/* HEADER- alinhado à direita */
+/*alinhado à direita */
 .site-header{padding:-5px 0}
 .top-nav{display:flex;justify-content:flex-end;gap:70px;align-items:center}
 .top-nav a{
@@ -73,9 +73,9 @@ body {
 
 /* BOTÕES (linha inferior) */
 .buttons{
-  margin-top:30px;
+  margin-top:300px;
   display:flex;
-  gap:4100px;
+  gap:400px;
   justify-content:center;
   flex-wrap:wrap;
   padding-bottom:90px;
