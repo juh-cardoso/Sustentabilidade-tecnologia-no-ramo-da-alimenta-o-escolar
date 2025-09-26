@@ -2,7 +2,7 @@ html, body {
   height: 100%;
 }
 
-/* Fundo full screen */
+/* Fundo */
 body {
   background-image: url("img/43\ \(1\).png"); 
   background-size: cover;     
@@ -11,7 +11,7 @@ body {
   background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
-/* HEADER / NAV TOPO - alinhado à direita */
+/* HEADER- alinhado à direita */
 .site-header{padding:-5px 0}
 .top-nav{display:flex;justify-content:flex-end;gap:70px;align-items:center}
 .top-nav a{
@@ -42,7 +42,7 @@ body {
   border-radius:6px;
   transition: transform .18s ease;
 }
-/* lado esquerdo - TITULO grande estilo da imagem */
+/* lado esquerdo */
 .hero-title{
   font-weight:1000;
   margin:0;
@@ -57,7 +57,7 @@ body {
 /* SEÇÃO CENTRAL */
 .center-section{ padding:100px 100px; text-align:center;}
 .center-title{
-  margin: 350px 0 8px;
+  margin: 200px 0 8px;
   font-size: clamp(8px, 3.6vw, 480px);
   font-weight:900;
   color:#04361f:
@@ -73,9 +73,9 @@ body {
 
 /* BOTÕES (linha inferior) */
 .buttons{
-  margin-top:25px;
+  margin-top:60px;
   display:flex;
-  gap:30px;
+  gap:40px;
   justify-content:center;
   flex-wrap:wrap;
   padding-bottom:00px;
