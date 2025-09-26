@@ -1,9 +1,3 @@
- {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
   height: 100%;
 }
@@ -72,7 +66,7 @@ body {
   margin:0 auto;
   max-width:10000000px;
   color:#3763139d;
-  font-size:20px;
+  font-size:200px;
   line-height:1.8;
   padding:60 20px;
 }
