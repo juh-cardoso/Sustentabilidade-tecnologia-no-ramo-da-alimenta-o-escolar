@@ -73,9 +73,9 @@ body {
 
 /* BOTÕES (linha inferior) */
 .buttons{
-  margin-top:60px;
+  margin-top:90px;
   display:flex;
-  gap:40px;
+  gap:50px;
   justify-content:center;
   flex-wrap:wrap;
   padding: bottom 0;
